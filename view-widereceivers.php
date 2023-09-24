@@ -6,6 +6,7 @@
       <th>ID</th>
       <th>Name</th>
       <th>ADOT</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,12 @@ while($widereceiver = $widereceivers->fetch_assoc())  {
     <td><?php echo $widereceiver['widereceiver_id']; ?> </td>
     <td><?php echo $widereceiver['widereceiver_name']; ?></td>
     <td><?php echo $widereceiver['widereceiver_adot']; ?></td>
+    <td>
+      <form method="post" action="wr-qb.php">
+        <input type="hidden" name="wrqb" value="<?php echo $widereceiver['widereceiver_id']; ?>">
+        <button type="submit" class="btn btn-primary">Quarterback</button>
+      </form>
+    </td>
   </tr>
 <?php
 }
