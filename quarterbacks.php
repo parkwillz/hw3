@@ -4,7 +4,7 @@ require_once("model-quarterbacks.php");
 
 $pageTitle = "Quarterbacks";
 include "view-header.php";
-$quarterbacks = selectQuarterbacks();
+$quarterback = selectQuarterbacks();
 include "view-quarterbacks.php";
 include "view-footer.php";
 ?>
