@@ -20,16 +20,13 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post.php">Post</a>
+          <a class="nav-link" href="quarterbacks.php">Quarterbacks</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post-result.php">Post Result</a>
+          <a class="nav-link" href="widereceivers.php">Wide Receivers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="get.php">Get</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="get-result.php">Get Results</a>
+          <a class="nav-link" href="qb-wr.php">Quarterbacks With Wide Receivers</a>
         </li>
       </ul>
     </div>
