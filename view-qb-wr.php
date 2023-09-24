@@ -17,7 +17,7 @@ while($qbwr = $qbwrs->fetch_assoc())  {
     <td><?php echo $qbwr['widereceiver_id']; ?> </td>
     <td><?php echo $qbwr['widereceiver_name']; ?></td>
     <td><?php echo $qbwr['widereceiver_adot']; ?></td>
-    
+    <td><?php echo $qbwr['teamname']; ?></td>
   </tr>
 <?php
 }
