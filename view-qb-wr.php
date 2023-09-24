@@ -11,13 +11,13 @@
     </thead>
     <tbody>
 <?php
-while($widereceiver = $widereceivers->fetch_assoc())  {
+while($qbwr = $qbwrs->fetch_assoc())  {
 ?>
   <tr>
-    <td><?php echo $widereceiver['widereceiver_id']; ?> </td>
-    <td><?php echo $widereceiver['widereceiver_name']; ?></td>
-    <td><?php echo $widereceiver['widereceiver_adot']; ?></td>
-  
+    <td><?php echo $qbwr['widereceiver_id']; ?> </td>
+    <td><?php echo $qbwr['widereceiver_name']; ?></td>
+    <td><?php echo $qbwr['widereceiver_adot']; ?></td>
+    
   </tr>
 <?php
 }
