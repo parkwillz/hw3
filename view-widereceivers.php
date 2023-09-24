@@ -13,9 +13,9 @@
 while($widereceiver = $widereceivers->fetch_assoc())  {
 ?>
   <tr>
-    <td><?php echo $widereceivers['widereceiver_id']; ?> </td>
-    <td><?php echo $widereceivers['widereceiver_name']; ?></td>
-    <td><?php echo $widereceivers['widereceiver_adot']; ?></td>
+    <td><?php echo $widereceiver['widereceiver_id']; ?> </td>
+    <td><?php echo $widereceiver['widereceiver_name']; ?></td>
+    <td><?php echo $widereceiver['widereceiver_adot']; ?></td>
   </tr>
 <?php
 }
