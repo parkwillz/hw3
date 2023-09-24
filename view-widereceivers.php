@@ -19,7 +19,7 @@ while($widereceiver = $widereceivers->fetch_assoc())  {
     <td><?php echo $widereceiver['widereceiver_adot']; ?></td>
     <td>
       <form method="post" action="wr-qb.php">
-        <input type="hidden" name="id" value="<?php echo $widereceiver['widereceiver_id']; ?>">
+        <input type="hidden" name="wrqb" value="<?php echo $widereceiver['widereceiver_id']; ?>">
         <button type="submit" class="btn btn-primary">Quarterback</button>
       </form>
     </td>
