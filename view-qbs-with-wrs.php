@@ -11,7 +11,7 @@ while($quarterback = $quarterbacks->fetch_assoc())  {
       <ul class="list-group">
 <?php
   $qbwrs = selectQBWR($quarterback['quarterback_id']);
-  while ($qbwr -> $qbwrs->fetch_assoc()){
+  while ($qbwr = $qbwrs->fetch_assoc()){
 ?>
     <li class="list-group-item"><?php echo $qbwr['widereceiver_name']; ?> - <?php echo $qbwr['widereceiver_adot']; ?></li>
 <?php
