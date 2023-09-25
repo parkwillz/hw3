@@ -26,7 +26,7 @@
           <a class="nav-link" href="widereceivers.php">Wide Receivers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="qb-wr.php">Quarterbacks With Wide Receivers</a>
+          <a class="nav-link" href="qbs-with-wrs.php">Quarterbacks With Wide Receivers</a>
         </li>
       </ul>
     </div>
