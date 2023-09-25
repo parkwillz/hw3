@@ -13,11 +13,11 @@ function selectQuarterbacks() {
     }
 }
 
-function selectWRQB($wrid) {
+function selectQBWR($qbid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("select q.quarterback_id, q.quarterback_name, q.quarterback_adot, t.teamname from quarterback q join team t on q.quarterback_id = t.quarterback_id where t.widereceiver_id=?");
-         $stmt->bind_param("i", $wrid);  
+        $stmt = $conn->prepare("select w.widereceiver_id, w.widereceiver_name, w.widereceiver_adot, t.teamname from widereceiver w join team t on w.widereceiver_id = t.widereceiver_id where t.quarterback_id=?");
+         $stmt->bind_param("i", $qbid);  
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
