@@ -10,7 +10,7 @@ while($quarterback = $quarterbacks->fetch_assoc())  {
       <p class="card-text">
       <ul class="list-group">
 <?php
-  $qbwr = selectWRQB($quarterback['quarterback_id']);
+  $qbwrs = selectWRQB($quarterback['quarterback_id']);
   while ($qbwr-> $qbwrs->fetch_assoc()){
 ?>
     <li class="list-group-item"><?php echo $qbwr['widereceiver_name']; ?> - <?php echo $qbwr['widereceiver_adot']; ?></li>
