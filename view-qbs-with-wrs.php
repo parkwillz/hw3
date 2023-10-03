@@ -4,7 +4,7 @@
 <?php
 while($quarterback = $quarterbacks->fetch_assoc())  {
 ?>
-  <div class="card">
+  <div class="card border-primary mb3" style="max-width: 18rem;">
     <div class="card-body">
       <h5 class="card-title"><?php echo $quarterback['quarterback_name']; ?></h5>
       <p class="card-text">
