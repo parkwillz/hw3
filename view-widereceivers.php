@@ -1,6 +1,6 @@
 <H1>Wide Receivers</H1>
 <div class="table-responsive">
-  <table class="table">
+  <table class="table table-striped table-hove">
     <thead>
       <tr>
       <th>ID</th>
