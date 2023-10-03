@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?=$pageTitle?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      body{
+       background-color: rgb(253, 249, 216);
+     }
+
+     .navbar-expand-lg{
+      background-color: rgb(253, 249, 216);
+      color: rgb(253, 249, 216);
+     }
+
+      }
+    </style>
   </head>
   <body>
     <div class ="container">
