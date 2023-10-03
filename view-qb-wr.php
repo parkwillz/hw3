@@ -1,5 +1,5 @@
 <H1>QBs and WRs</H1>
-<div class="table-responsive">
+<div class="table-responsive table-striped table-hover">
   <table class="table">
     <thead>
       <tr>
