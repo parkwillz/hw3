@@ -1,6 +1,6 @@
 <H1>QBs and WRs</H1>
 <div class="table-responsive">
-  <table class="table">
+  <table class="table table-success table-striped table-hove">
     <thead>
       <tr>
       <th>ID</th>
