@@ -24,6 +24,7 @@
             <label for="quarterbackADOT" class="form-label">Quarterback ADOT</label>
             <input type="text" class="form-control" id="quarterbackADOT" name="quarterbackADOT">
           </div>
+            <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
