@@ -30,7 +30,7 @@ function insertQuarterbacks($qName, $qADOT) {
 function updateQuarterbacks($qName, $qADOT, $qbid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update quarterback set quarterback_name = ?, quarterback_adot = ?) where quarterback_id = ?");
+        $stmt = $conn->prepare("update quarterback set quarterback_name = ?, quarterback_adot = ? where quarterback_id = ?");
         $stmt->bind_param("ssi", $qName, $qADOT, $qbid);
         $success = $stmt->execute();
         $conn->close();
