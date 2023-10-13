@@ -15,6 +15,13 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-warning" role="alert">Error</div>';
       }
       break;
+    case "Edit":
+      if (updateQuarterbacks($_POST['qName'], $_POST['qADOT'], $_POST['qbid'])) {
+        echo '<div class="alert alert-success" role="alert">Quarterback Edited!</div>';
+      } else {
+        echo '<div class="alert alert-warning" role="alert">Error</div>';
+      }
+      break;
     case "Delete":
       if (deleteQuarterbacks($_POST['qbid'])) {
         echo '<div class="alert alert-success" role="alert">Quarterback Deleted!</div>';
