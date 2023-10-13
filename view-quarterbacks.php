@@ -16,6 +16,8 @@ include "view-quarterbacks-newform.php";
       <th>Name</th>
       <th>Air Yards/Attempt</th>
         <th></th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -26,6 +28,10 @@ while($quarterback = $quarterbacks->fetch_assoc())  {
     <td><?php echo $quarterback['quarterback_id']; ?> </td>
     <td><?php echo $quarterback['quarterback_name']; ?></td>
     <td><?php echo $quarterback['quarterback_adot']; ?></td>
+    <td>
+    </td>
+    <td>
+    </td>
     <td><a href="qb-wr.php?id=<?php echo $quarterback['quarterback_id']; ?> ">Wide Receivers</a></td>
   </tr>
 <?php
