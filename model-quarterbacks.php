@@ -16,7 +16,7 @@ function selectQuarterbacks() {
 function insertQuarterbacks($qName, $qADOT) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO 'quarterback' ('quarterback_name', 'quarterback_adot') VALUES (?, ?)");
+        $stmt = $conn->prepare("INSERT INTO quarterback (quarterback_name, quarterback_adot) VALUES (?, ?)");
         $stmt->bind_param("ss", $qName, $qADOT);
         $success = $stmt->execute();
         $conn->close();
