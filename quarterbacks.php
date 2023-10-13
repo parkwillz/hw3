@@ -15,6 +15,13 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-warning" role="alert">Error</div>';
       }
       break;
+    case "Delete":
+      if (deleteQuarterbacks($_POST['qbid'])) {
+        echo '<div class="alert alert-success" role="alert">Quarterback Deleted!</div>';
+      } else {
+        echo '<div class="alert alert-warning" role="alert">Error</div>';
+      }
+      break;
   }
 }
 $quarterbacks = selectQuarterbacks();
