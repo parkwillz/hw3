@@ -17,12 +17,12 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="quarterbackName" class="form-label">Quarterback Name</label>
-            <input type="text" class="form-control" id="quarterbackName" name="quarterbackName">
+            <label for="qName" class="form-label">Quarterback Name</label>
+            <input type="text" class="form-control" id="qName" name="qName">
           </div>
           <div class="mb-3">
-            <label for="quarterbackADOT" class="form-label">Quarterback ADOT</label>
-            <input type="text" class="form-control" id="quarterbackADOT" name="quarterbackADOT">
+            <label for="qADOT" class="form-label">Quarterback ADOT</label>
+            <input type="text" class="form-control" id="qADOT" name="qADOT">
           </div>
             <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
