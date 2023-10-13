@@ -2,7 +2,7 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-<h1>HW3</h1>
+<h1>HW4</h1>
 <p>This website displays correlation between Air Yards/Attempt by a QB and ADOT from a teams WR1 and WR2</p>
 <p>When you click on the quarterbacks tab you will see each qb ranked highest to lowest on air yards/attempt</p>
 <p>The wide receivers page displays the WR1 and WR2 per each NFL teams ADOT</p>
