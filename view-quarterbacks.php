@@ -29,6 +29,9 @@ while($quarterback = $quarterbacks->fetch_assoc())  {
     <td><?php echo $quarterback['quarterback_name']; ?></td>
     <td><?php echo $quarterback['quarterback_adot']; ?></td>
     <td>
+<?php
+include "view-quarterbacks-editform.php";
+?>
     </td>
     <td>
        <form method="post" action="">
