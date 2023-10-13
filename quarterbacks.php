@@ -9,7 +9,11 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-      insertQuarterbacks($_POST['qName'], $_POST['qADOT']);
+      if (insertQuarterbacks($_POST['qName'], $_POST['qADOT'])) {
+        echo '<div class="alert alert-success" role="alert">Quarterback Added!</div>';
+      } else {
+        echo '<div class="alert alert-warning" role="alert">Error</div>';
+      }
       break;
   }
 }
