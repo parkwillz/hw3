@@ -1,4 +1,13 @@
-<H1>Wide Receivers</H1>
+<div class="row">
+  <div class ="col">
+    <H1>Wide Receivers</H1>
+  </div>
+  <div class="col-auto">
+<?php
+include "view-widereceivers-newform.php";
+?>
+  </div>
+</div>
 <div class="table-responsive">
   <table class="table table-striped table-hover">
     <thead>
@@ -6,6 +15,8 @@
       <th>ID</th>
       <th>Name</th>
       <th>ADOT</th>
+        <th></th>
+        <th></th>
         <th></th>
       </tr>
     </thead>
