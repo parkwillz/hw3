@@ -27,10 +27,10 @@ function insertRunningbacks($rName, $rRYOA) {
     }
 }
 
-function updateRunningbacks($rName, $rARYOA, $rbid) {
+function updateRunningbacks($rName, $rRYOA, $rbid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update runningback set runningback_name = ?, runningback_RYOA = ? where runningback_id = ?");
+        $stmt = $conn->prepare("update runningback set runningback_name = ?, runningback_ryoa = ? where runningback_id = ?");
         $stmt->bind_param("ssi", $rName, $rRYOA, $rbid);
         $success = $stmt->execute();
         $conn->close();
@@ -41,7 +41,7 @@ function updateRunningbacks($rName, $rARYOA, $rbid) {
     }
 }
 
-function deleteQuarterbacks($rbid) {
+function deleteRunningbacks($rbid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from runningback where runningback_id=?");
