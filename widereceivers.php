@@ -2,6 +2,10 @@
 require_once("util-db.php");
 require_once("model-widereceivers.php");
 
+$pageTitle = "Wide Receivers";
+include "view-header.php";
+
+
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
@@ -28,9 +32,6 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-
-$pageTitle = "Wide Receivers";
-include "view-header.php";
 $widereceivers = selectWidereceivers();
 include "view-widereceivers.php";
 include "view-footer.php";
