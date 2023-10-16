@@ -27,4 +27,74 @@ function selectQBWR($qbid) {
         throw $e;
     }
 }
+
+function selectQuarterbacksForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT quarterback_id, quarterback_name FROM quarterback order by quarterback_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function selectWidereceiversForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT widereceiver_id, widereceiver_name FROM widereceiver order by widereceiver_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function insertTeam($qbid, $wrid, $name) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO team (quarterback_id, widereceiver_id, teamname) VALUES (?, ?, ?)");
+        $stmt->bind_param("iis", $qbid, $wrid, $name);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function updateTeam($qbid, $wrid, $name, $tid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update team set quarterback_id = ?, widereceiver_id = ?, teamname = ? where team_id = ?");
+        $stmt->bind_param("iis", $qbid, $wrid, $name);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function deleteTeam($tid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from team where team_id=?");
+        $stmt->bind_param("i", $tid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
