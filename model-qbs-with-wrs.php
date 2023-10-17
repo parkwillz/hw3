@@ -56,11 +56,11 @@ function selectWidereceiversForInput() {
     }
 }
 
-function insertTeam($qbid, $wrid, $name) {
+function insertTeam($qbid, $wrid, $wName, $wADOT) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO team (quarterback_id, widereceiver_id, teamname) VALUES (?, ?, ?)");
-        $stmt->bind_param("iis", $qbid, $wrid, $name);
+        $stmt = $conn->prepare("INSERT INTO team (quarterback_id, widereceiver_id, widereceiver_name, widereceiver_adot) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("iiss", $qbid, $wrid, $wName, $wADOT);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -70,11 +70,11 @@ function insertTeam($qbid, $wrid, $name) {
     }
 }
 
-function updateTeam($qbid, $wrid, $name, $tid) {
+function updateTeam($qbid, $wrid, $wName, $wADOT, $tid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update team set quarterback_id = ?, widereceiver_id = ?, teamname = ? where team_id = ?");
-        $stmt->bind_param("iis", $qbid, $wrid, $name);
+        $stmt = $conn->prepare("update team set quarterback_id = ?, widereceiver_id = ?, widereceiver_name = ?, widereceiver_adot = ? where team_id = ?");
+        $stmt->bind_param("iissi", $qbid, $wrid, $wName, $wADOT, $tid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
