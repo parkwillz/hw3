@@ -11,7 +11,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="newTeamModalLabel">New Team</h1>
+        <h1 class="modal-title fs-5" id="newTeamModalLabel">New Wide Receiver</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -25,20 +25,16 @@ include "view-quarterback-input-list.php";
 ?>
           </div>
           <div class="mb-3">
-            <label for="cid" class="form-label">Course</label>
-            <input type="text" class="form-control" id="cid" name="cid">
+            <label for="wrid" class="form-label">Wide Receiver ID</label>
+            <input type="text" class="form-control" id="wrid" name="wrid">
           </div>
           <div class="mb-3">
-            <label for="sem" class="form-label">Semester</label>
-            <input type="text" class="form-control" id="sem" name="sem">
+            <label for="wName" class="form-label">Wide Receiver Name</label>
+            <input type="text" class="form-control" id="wName" name="wName">
           </div>
           <div class="mb-3">
-            <label for="room" class="form-label">Room</label>
-            <input type="text" class="form-control" id="room" name="room">
-          </div>
-          <div class="mb-3">
-            <label for="daytime" class="form-label">Day/ time</label>
-            <input type="text" class="form-control" id="daytime" name="daytime">
+            <label for="wADOT" class="form-label">Wide Receiver ADOT</label>
+            <input type="text" class="form-control" id="wADOT" name="wADOT">
           </div>
             <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
