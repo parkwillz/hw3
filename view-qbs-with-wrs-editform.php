@@ -30,7 +30,7 @@ include "view-quarterback-input-list.php";
           </div>
           <div class="mb-3">
             <label for="wName<?php echo $qbwr['team_id']; ?>" class="form-label">Wide Receiver Name</label>
-            <input type="text" class="form-control" id="wName<?php echo $qbwr['team_id']; ?>" name="wName" value="<?php echo $qbwr['widereceiver_namet']; ?>">
+            <input type="text" class="form-control" id="wName<?php echo $qbwr['team_id']; ?>" name="wName" value="<?php echo $qbwr['widereceiver_name']; ?>">
           </div>
             <div class="mb-3">
             <label for="wADOT<?php echo $qbwr['team_id']; ?>" class="form-label">Air Yards/Attempt</label>
