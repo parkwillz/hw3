@@ -1,6 +1,6 @@
 <select class="form-select" id="qbid" name="qbid">
 <?php
-while ($quarterbacmItem = $quarterbackList->fetch_assoc()) {
+while ($quarterbackItem = $quarterbackList->fetch_assoc()) {
   $selText = "";
   if ($selectedQuarterback == $quarterbackItem['quarterback_id']) {
     $selText = " selected";
