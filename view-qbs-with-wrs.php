@@ -4,7 +4,7 @@
   </div>
   <div class="col-auto">
 <?php
-include "view-quarterbacks-with-widereceivers-newform.php";
+include "view-qbs-with-wrs-newform.php";
 ?>
   </div>
 </div>
@@ -28,7 +28,7 @@ while ($quarterback = $quarterbacks->fetch_assoc()) {
       </div>
       <div class="col-auto">
 <?php
-include "view-quarterbacks-with-widereceivers-editform.php";
+include "view-qbs-with-wrs-editform.php";
 ?>
       </div>
       <div class="col-auto">
