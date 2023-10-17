@@ -50,7 +50,7 @@ include "view-qbs-with-wrs-editform.php";
 ?>
       </ul>
       </p>
-      <p class="card-text"><small class="text-body-secondary">Office: <?php echo $instructor['office_number']; ?></small></p>
+      <p class="card-text"><small class="text-body-secondary">QB Air Yards: <?php echo $quarterback['quarterback_adot']; ?></small></p>
     </div>
   </div>
 <?php
