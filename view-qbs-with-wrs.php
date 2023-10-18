@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row row-cols-1 row-cols-lg-4 g-2">
  <div class="col">
     <div class="card h-100">
 <h1>Quarterbacks with Wide Receivers</h1>
@@ -10,7 +10,6 @@ include "view-qbs-with-wrs-newform.php";
   </div>
  </div>
 </div>
-<div class="row row-cols-1 row-cols-lg-4 g-2">
 <?php
 while ($quarterback = $quarterbacks->fetch_assoc()) {
 ?>
