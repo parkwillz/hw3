@@ -26,7 +26,7 @@ while ($quarterback = $quarterbacks->fetch_assoc()) {
     <li class="list-group-item">
     <div class="row">
       <div class="col">
-        <?php echo $qbwr['widereceiver_id']; ?> - <?php echo $qbwr['widereceiver_name']; ?> - <?php echo $qbwr['widereceiver_adot']; ?>
+        <?php echo $qbwr['widereceiver_id']; ?> - <?php echo $qbwr['widereceiver_name']; ?> - <?php echo $qbwr['widereceiver_adot']; ?> ADOT
       </div>
       <div class="col-auto">
 <?php
