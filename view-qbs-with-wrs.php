@@ -3,11 +3,11 @@
     <div class="card h-100">
 <h1>Quarterbacks with Wide Receivers</h1>
   </div>
+  </div>
   <div class="col-auto">
 <?php
 include "view-qbs-with-wrs-newform.php";
 ?>
-  </div>
  </div>
 </div>
 <div class="row row-cols-1 row-cols-lg-4 g-2">
