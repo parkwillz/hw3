@@ -74,7 +74,7 @@ function updateTeam($qbid, $wrid, $tid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update team set quarterback_id = ?, widereceiver_id = ?, where team_id = ?");
-        $stmt->bind_param("sss", $qbid, $wrid, $tid);
+        $stmt->bind_param("iii", $qbid, $wrid, $tid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
