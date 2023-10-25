@@ -56,11 +56,11 @@ function selectWidereceiversForInput() {
     }
 }
 
-function insertTeam($qbid, $wrid, $wName, $wADOT) {
+function insertTeam($qbid, $wrid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO team (quarterback_id, widereceiver_id, widereceiver_name, widereceiver_adot) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("iiss", $qbid, $wrid, $wName, $wADOT);
+        $stmt = $conn->prepare("INSERT INTO team (quarterback_id, widereceiver_id) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ii", $qbid, $wrid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
