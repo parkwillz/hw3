@@ -28,14 +28,6 @@ include "view-quarterback-input-list.php";
             <label for="wrid" class="form-label">Wide Receiver ID</label>
             <input type="text" class="form-control" id="wrid" name="wrid">
           </div>
-          <div class="mb-3">
-            <label for="wName" class="form-label">Wide Receiver Name</label>
-            <input type="text" class="form-control" id="wName" name="wName">
-          </div>
-          <div class="mb-3">
-            <label for="wADOT" class="form-label">Wide Receiver ADOT</label>
-            <input type="text" class="form-control" id="wADOT" name="wADOT">
-          </div>
             <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
