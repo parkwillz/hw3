@@ -28,14 +28,6 @@ include "view-quarterback-input-list.php";
             <label for="wrid<?php echo $qbwr['team_id']; ?>" class="form-label">Wide Receiver ID</label>
             <input type="text" class="form-control" id="wrid<?php echo $qbwr['team_id']; ?>" name="wrid" value="<?php echo $qbwr['widereceiver_id']; ?>">
           </div>
-          <div class="mb-3">
-            <label for="wName<?php echo $qbwr['team_id']; ?>" class="form-label">Wide Receiver Name</label>
-            <input type="text" class="form-control" id="wName<?php echo $qbwr['team_id']; ?>" name="wName" value="<?php echo $qbwr['widereceiver_name']; ?>">
-          </div>
-            <div class="mb-3">
-            <label for="wADOT<?php echo $qbwr['team_id']; ?>" class="form-label">Air Yards/Attempt</label>
-            <input type="text" class="form-control" id="wADOT<?php echo $qbwr['team_id']; ?>" name="wADOT" value="<?php echo $qbwr['widereceiver_adot']; ?>">
-          </div>
             <input type="hidden" name="tid" value="<?php echo $qbwr['team_id']; ?>">
             <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
