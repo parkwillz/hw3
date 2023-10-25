@@ -59,7 +59,7 @@ function selectWidereceiversForInput() {
 function insertTeam($qbid, $wrid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO team (quarterback_id, widereceiver_id) VALUES (?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO team (quarterback_id, widereceiver_id) VALUES (?, ?)");
         $stmt->bind_param("ii", $qbid, $wrid);
         $success = $stmt->execute();
         $conn->close();
